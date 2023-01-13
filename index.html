@@ -3,9 +3,16 @@
     <head>
         <title>Google Search</title>
         <style>
-            .bumpkin {
-                text-align: center;
+            .center {
+                display: flex;
+                justify-content: center;
             }
+
+            .button {
+                position: absolute;
+                top: 50%;
+            }
+
             #first {
                 margin-top: 1px;
                 margin-right: 145px;
@@ -13,6 +20,7 @@
                 top: 0;
                 right: 0;
             }
+
             #second {
                 position: absolute;
                 margin-top: 1px;
@@ -23,10 +31,12 @@
         </style>
     </head>
     <body>
+    <div class="center">
         <form action="https://www.google.com/search">
             <input type="text" name="q">
-            <input class="bumpkin" type="submit" value="Google Search">
+            <input type="submit" value="Google Search">
         </form>
+    </div>
         <a id="first" href="image_search.html">Image Search</a>
         <a id="second" href="advance_search.html">Advanced Search</a>
     </body>
